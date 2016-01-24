@@ -1,0 +1,104 @@
+body {
+	background-color: #db332a;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.header { 
+	background-color: #c32019;
+	padding: 15px 0;
+	h2 {
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+	}
+}
+.f-warp {
+	.f-bg-1{
+		width: 100%;
+		height: 230px;
+	    background: #fff url(../images/login_01.jpg) no-repeat center top;
+	    background-size: cover;
+	    margin-bottom: 56px;
+	}
+	.f-login-form {
+		margin: 0 15px;
+
+		.f-tel-wrap input, {
+			width: 100%;
+			padding: 13px 0 13px 45px;
+			border-radius: 4px;
+			&:focus {
+			    outline: none;
+			    outline-offset: 0;
+			}
+			background: url(../images/login_02.png) #fff no-repeat left;
+			background-size: contain;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		.f-pass-wrap input {
+			width: 100%;
+			margin-top: 15px;
+			padding: 13px 0 13px 45px;
+			border-radius: 5px;
+			&:focus {
+			    outline: none;
+			    outline-offset: 0;
+			}
+			background: url(../images/login_03.png) #fff no-repeat left;
+			background-size: contain;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		.f-agree {
+			margin-top: 15px;
+			cursor: pointer;
+		    -webkit-user-select: none;
+		    color: #fff;
+		    @include clearfix();
+			.f-checkbox {
+				float: left;
+				margin-right: 6px;
+				margin-top: -1px;
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				background-color: #fff;
+				border-radius: 5px;
+			}
+		}
+		.f-forgot-pass {
+			color: #fff;
+			text-decoration: underline;
+		}
+		.f-login-btn {
+			display: block;
+			width: 100%;
+			height: 65px;
+			font-size: 20px;
+			margin-top: 25px;
+			line-height: 65px;
+			text-align: center;
+			color: #fff;
+			border-radius: 50px;
+			background-color: #fddd32;
+			box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+			-moz-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+			-o-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+			-webkit-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+			}
+		}
+	}
+}
+.f-regist {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+	color: #fddc2f;
+	font-size: 18px;
+	text-decoration: underline;
+}

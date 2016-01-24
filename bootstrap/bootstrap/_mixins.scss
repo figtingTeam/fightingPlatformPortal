@@ -1,0 +1,41 @@
+@charset "utf-8";
+// Mixins 函数
+// --------------------------------------------------
+
+// 工具集
+@import "mixins/hide-text";                  //隐藏文本
+@import "mixins/opacity";                    //设置不透明度
+@import "mixins/image";                      //图像处理
+@import "mixins/labels";                     //标签
+@import "mixins/reset-filter";               //重置滤镜【针对IE9以下版本】
+@import "mixins/resize";                     //调整大小
+@import "mixins/responsive-visibility";      //响应式工具
+@import "mixins/size";						 //宽、高设置
+@import "mixins/tab-focus";					 //标签焦点
+@import "mixins/reset-text";				 //重置文本
+@import "mixins/text-emphasis";			     //文本着重
+@import "mixins/text-overflow";				 //文本溢出
+@import "mixins/vendor-prefixes";			 //自动填充前缀
+
+// 组件
+@import "mixins/alerts";					 //弹框
+@import "mixins/buttons";					 //按钮
+@import "mixins/panels";					 //面板
+@import "mixins/pagination";				 //分页
+@import "mixins/list-group";				 //列表组
+@import "mixins/nav-divider";				 
+@import "mixins/forms";						 //表单
+@import "mixins/progress-bar";				 //进度条
+@import "mixins/table-row";					 //表格
+
+// 皮肤
+@import "mixins/background-variant";	     //背景
+@import "mixins/border-radius";			     //边框半径
+@import "mixins/gradients";				     //渐变
+
+// 布局
+@import "mixins/clearfix";					 //闭合浮动
+@import "mixins/center-block";				 //居中
+@import "mixins/nav-vertical-align";		  
+@import "mixins/grid-framework";			 //栅格系统框架
+@import "mixins/grid";						 //栅格

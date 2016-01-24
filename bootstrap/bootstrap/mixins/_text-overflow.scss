@@ -1,0 +1,9 @@
+@charset "utf-8";
+// 文本溢出
+// Requires inline-block or block for proper styling
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

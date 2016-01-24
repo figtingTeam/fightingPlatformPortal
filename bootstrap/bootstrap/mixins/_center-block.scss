@@ -1,0 +1,8 @@
+@charset "utf-8";
+// 居中对齐一个块级元素
+
+@mixin center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

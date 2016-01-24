@@ -1,0 +1,7 @@
+@charset "utf-8";
+// 针对IE重置滤镜
+//
+// 当你需要移除渐变背景时候，针对IE9以下版本需要重置滤镜
+@mixin reset-filter() {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}

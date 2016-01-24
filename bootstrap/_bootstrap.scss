@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* 
+ * 基于bootstrap v3.3.6修改，感谢那群群无私奉献的人 
+ */
+
+// 核心变量及mixins函数
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// 浏览器样式重置及依赖
+@import "bootstrap/normalize";
+// @import "bootstrap/print";
+// @import "bootstrap/glyphicons";
+
+// 核心 CSS 代码
+@import "bootstrap/scaffolding";                            //基本支架
+@import "bootstrap/type";                                   //排版
+//@import "bootstrap/code";							        //代码块
+@import "bootstrap/grid";									//栅格
+@import "bootstrap/tables";									//表格
+@import "bootstrap/forms";								    //表单
+@import "bootstrap/buttons";								//按钮
+
+// // Components
+// @import "bootstrap/component-animations";
+// @import "bootstrap/dropdowns";
+// @import "bootstrap/button-groups";
+// @import "bootstrap/input-groups";
+// @import "bootstrap/navs";
+// @import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
+
+// // Components w/ JavaScript
+// @import "bootstrap/modals";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popovers";
+// @import "bootstrap/carousel";
+
+// // Utility classes
+// @import "bootstrap/utilities";
+// @import "bootstrap/responsive-utilities";

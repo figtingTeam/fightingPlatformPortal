@@ -1,0 +1,9 @@
+@charset "utf-8";
+// 不透明度
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 滤镜
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
