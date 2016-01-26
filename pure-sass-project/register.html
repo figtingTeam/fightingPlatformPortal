@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<title>拼生活登陆页面</title>
+		<title>拼生活注册页面</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -26,16 +26,36 @@
 	</head>
 	<body>
 		<header class="header">
-			<h2 class="f-title">登陆</h2>
+			<i class="back">后退</i>
+			<h2 class="f-title">注册</h2>
 		</header>
 		<div class="f-warp">
-			<div class="f-bg-1"></div>
-			<form class="f-login-form">
+			<form class="f-register-form">
+				<div class="f-u-wrap">
+					<input type="text" name="" placeholder="请输入姓名">
+				</div>
 				<div class="f-tel-wrap">
-					<input type="tel" name="" placeholder="请输入手机号" maxlength="11">
+					<input type="tel" name="" placeholder="请输入手机号">
+				</div>
+				<div class="f-verify-wrap">
+					<input type="text" name="" placeholder="请输入手机号">
+					<a href="javascript:;">获取验证码</a>
 				</div>
 				<div class="f-pass-wrap">
-					<input type="password" name="" placeholder="请输入密码">
+					<input type="password" name="" placeholder="设置密码">
+				</div>
+				<div class="f-pass-wrap">
+					<input type="password" name="" placeholder="重置密码">
+				</div>
+				<div class="protocol">
+					<h2>协议书</h2>
+					<p>我是协议书，啦啦啦啦啦啦啦啦啦，不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制不能复制</p>
+				</div>
+				<div class="f-agree">
+					<span class="fl">
+						<i class="f-checkbox active"></i>《关于拼了平台服务协议》
+					</span>
+					<a href="javascript:;" class="f-forgot-pass fr">忘记密码？</a>
 				</div>
 				<div class="f-agree">
 					<span class="fl">
@@ -49,6 +69,5 @@
 		</div>
 	</body>
 	<!-- JavaScript --> 
-	<script src="javascript/init.js"></script>
 	<script src="javascript/app.js"></script>
 </html>
