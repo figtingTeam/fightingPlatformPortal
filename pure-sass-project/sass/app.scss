@@ -1,10 +1,11 @@
 @charset 'utf-8';
-body {
+body, html {
 	background-color: #db332a;
 	color: #fff;
+	height: 100%;
 }
 .fl {
-	float: left;
+	float: left; 
 }
 .fr {
 	float: right;
@@ -13,8 +14,18 @@ body {
 	background-color: #c32019;
 	height: 2.5rem;
 	i.back {
-		position: absolute;
-		left: 0.1rem;
+	  position: absolute;
+	  left: 0.5rem;
+	  width: 11px;
+	  height: 2.5rem;
+	  display: inline-block;
+	  vertical-align: middle;
+	  background-size: 100% auto;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  font-style: normal;
+	  text-indent: -999999999px;
+	  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
 	}
 	h2 {
 		text-align: center;
@@ -24,30 +35,70 @@ body {
     	margin: 0;
 	}
 }
-.f-warp {
-	.f-bg-1{
-		width: 100%;
-		height: 11.5rem;
-	    background: #fff url(../images/login_01.jpg) no-repeat center top;
-	    background-size: cover;
-	    margin-bottom: 3rem;
+.f-login {
+	height: 100%;
+	background: url(../images/login/bg_login.png) no-repeat center;
+	background-size: cover;
+}
+.f-com-bg {
+	height: 100%;
+	background: url(../images/common/f_bg.png) no-repeat center;
+	background-size: cover;
+}
+.f-btn{
+	display: block;
+	width: 100%;
+	height: 3rem;
+	font-size: 1rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 2.5rem;
+	background-color: #fddd32;
+	box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+	-moz-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+	-o-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+	-webkit-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		outline: none;
+		border: none;
 	}
+}
+.f-warp {
 	//登陆
+	@media (max-height: 500px) {
+		.f-login-form {
+	 		margin: 11rem 0.75rem 0 0.75rem !important;
+	 	}
+	}
 	.f-login-form {
-		margin: 0 0.75rem;
-
+		input[type='tel'] {
+			background: url(../images/common/phone.png) #fff no-repeat 12px 10px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		input[type='text'] {
+			background: url(../images/common/user.png) #fff no-repeat 12px 10px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		input[type='password'] {
+			background: url(../images/common/lock.png) #fff no-repeat 12px 9px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		margin: 14rem 0.75rem 0 0.75rem;
 		.f-tel-wrap input {
 			width: 100%;
 			color: #000;
 			padding: 0.6rem 0 0.6rem 2.25rem;
 			border-radius: 4px;
+			border: none;
 			&:focus {
 			    outline: none;
 			    outline-offset: 0;
 			}
-			background: url(../images/login_02.png) #fff no-repeat left;
-			background-size: contain;
-			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		.f-pass-wrap input {
 			width: 100%;
@@ -55,61 +106,103 @@ body {
 			margin-top: 0.75rem;
 			padding: 0.6rem 0 0.6rem 2.25rem;
 			border-radius: 4px;
+			border: none;
 			&:focus {
 			    outline: none;
 			    outline-offset: 0;
 			}
-			background: url(../images/login_03.png) #fff no-repeat left;
-			background-size: contain;
-			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		.f-forgot-pass {
 			color: #fff;
 			text-decoration: underline;
 		}
 		.f-login-btn {
-			display: block;
-			width: 100%;
-			height: 3rem;
-			font-size: 1rem;
 			margin-top: 1.2rem;
-			line-height: 3rem;
-			text-align: center;
-			color: #fff;
-			border-radius: 2.5rem;
-			background-color: #fddd32;
-			box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
-			-moz-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
-			-o-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
-			-webkit-box-shadow: 0 5px 0 0 #c6413c, inset 0 -5px 0 0 #ecb92a;
-			&:hover, &:focus, &:active {
-				text-decoration: none;
-			}
 		}
 	}
 	//注册
-	.f-register-form {
-		margin: 0 15px;
+	.f-register-form, .f-findpass-form, .f-updatepass-form{
+		input[type='tel'] {
+			background: url(../images/common/phone.png) #fff no-repeat 12px 10px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		input[type='text'] {
+			background: url(../images/common/user.png) #fff no-repeat 12px 10px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		input[type='password'] {
+			background: url(../images/common/lock.png) #fff no-repeat 12px 9px ;
+			background-size: 20px;
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+		}
+		margin: 0 0.75rem;
 		input {
 			width: 100%;
-			padding: 13px 0 13px 45px;
+			color: #000;
+			padding: 0.6rem 0 0.6rem 2.25rem;
 			border-radius: 4px;
+			border: none;
+			margin-top: 0.75rem;
+
 			&:focus {
 			    outline: none;
 			    outline-offset: 0;
 			}
-			background: url(../images/login_02.png) #fff no-repeat left;
-			background-size: contain;
 			-webkit-tap-highlight-color: rgba(0,0,0,0);
 		}
 		.f-u-wrap {
-			margin-top: 18px;
-
+		   margin-top: 0.2rem;
+		}
+		.f-verify-wrap {
+			@include clearfix();
+			input[type="tel"] {
+				width: 8.35rem;
+				background: white no-repeat 12px 10px;
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+			}
+			a {
+				display: inline-block;
+				height: 2.15rem;
+				line-height: 2.15rem;
+				width: 7.8rem;
+				background-color: #dc332a;
+				color: #fff;
+				text-align: center;
+				border-radius: 4px;
+				margin-top: 0.75rem;
+				text-decoration: none;
+				font-size: 1rem;
+			}
+		}
+		.protocol {
+			background-color: #fff;
+			margin-top: 0.75rem;
+			color: #000;
+			border-radius: 4px;
+			padding: 0.6rem;
+			overflow-y: auto;
+			height: 7rem;
+			h2 {
+				text-align: center;
+				font-weight: bold;
+				font-size: 18px;
+			}
+			p {
+				text-indent: 1rem;
+				line-height: 1rem;
+			}
+		}
+		.f-regist-btn {
+			margin-top: 0.75rem;
+		}
+		.f-findpass-btn, .f-updatepass-btn {
+			margin-top: 3rem;
 		}
 	}
 	.f-agree {
-		margin-top: 15px;
-		cursor: pointer;
+		margin-top: 0.75rem;
 	    -webkit-user-select: none;
 	    color: #fff;
 	    @include clearfix();
@@ -124,6 +217,7 @@ body {
 			border-radius: 5px;
 		}
 	}
+	//
 }
 .f-regist {
 	display: block;
