@@ -49,7 +49,6 @@ template {
 
 a {
   background-color: transparent;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.18039);
 }
 
 a:active,
@@ -2740,16 +2739,23 @@ body, html {
 .header i.back {
   position: absolute;
   left: 0.5rem;
-  width: 11px;
-  height: 2.5rem;
+  top: 0.75rem;
+  width: 13px;
+  height: 23px;
   display: inline-block;
-  vertical-align: middle;
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
   font-style: normal;
   text-indent: -999999999px;
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2012%2020'%3E%3Cpath%20d%3D'M10%2C0l2%2C2l-8%2C8l8%2C8l-2%2C2L0%2C10L10%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+  background: url("../images/common/common.png") no-repeat -8px -9px;
+}
+.header .f-more-opt {
+  position: absolute;
+  display: inline-block;
+  text-indent: -999999999px;
+  top: 0.75rem;
+  right: 0.8rem;
+  width: 5px;
+  height: 23px;
+  background: url("../images/common/common.png") no-repeat -41px -9px;
 }
 .header h2 {
   text-align: center;
@@ -2757,6 +2763,30 @@ body, html {
   color: #fff;
   line-height: 2.5rem;
   margin: 0;
+}
+.header .f-more-list {
+  position: absolute;
+  width: 10rem;
+  right: 0.5rem;
+  background-color: #c32019;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  box-shadow: 0px -1px 6px #373636;
+}
+.header .f-more-list li {
+  width: 10rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  color: #fff;
+  border-bottom-color: #86130d;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.header .f-more-list li.last {
+  border: none;
 }
 
 .f-login {
@@ -2845,25 +2875,25 @@ body, html {
 .f-warp .f-login-form .f-login-btn {
   margin-top: 1.2rem;
 }
-.f-warp .f-register-form, .f-warp .f-findpass-form, .f-warp .f-updatepass-form {
+.f-warp .f-register-form, .f-warp .f-findpass-form, .f-warp .f-updatepass-form, .f-warp .f-userinfo-form {
   margin: 0 0.75rem;
 }
-.f-warp .f-register-form input[type='tel'], .f-warp .f-findpass-form input[type='tel'], .f-warp .f-updatepass-form input[type='tel'] {
+.f-warp .f-register-form input[type='tel'], .f-warp .f-findpass-form input[type='tel'], .f-warp .f-updatepass-form input[type='tel'], .f-warp .f-userinfo-form input[type='tel'] {
   background: url(../images/common/phone.png) white no-repeat 12px 10px;
   background-size: 20px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.f-warp .f-register-form input[type='text'], .f-warp .f-findpass-form input[type='text'], .f-warp .f-updatepass-form input[type='text'] {
+.f-warp .f-register-form input[type='text'], .f-warp .f-findpass-form input[type='text'], .f-warp .f-updatepass-form input[type='text'], .f-warp .f-userinfo-form input[type='text'] {
   background: url(../images/common/user.png) white no-repeat 12px 10px;
   background-size: 20px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.f-warp .f-register-form input[type='password'], .f-warp .f-findpass-form input[type='password'], .f-warp .f-updatepass-form input[type='password'] {
+.f-warp .f-register-form input[type='password'], .f-warp .f-findpass-form input[type='password'], .f-warp .f-updatepass-form input[type='password'], .f-warp .f-userinfo-form input[type='password'] {
   background: url(../images/common/lock.png) white no-repeat 12px 9px;
   background-size: 20px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.f-warp .f-register-form input, .f-warp .f-findpass-form input, .f-warp .f-updatepass-form input {
+.f-warp .f-register-form input, .f-warp .f-findpass-form input, .f-warp .f-updatepass-form input, .f-warp .f-userinfo-form input {
   width: 100%;
   color: #000;
   padding: 0.6rem 0 0.6rem 2.25rem;
@@ -2872,26 +2902,26 @@ body, html {
   margin-top: 0.75rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.f-warp .f-register-form input:focus, .f-warp .f-findpass-form input:focus, .f-warp .f-updatepass-form input:focus {
+.f-warp .f-register-form input:focus, .f-warp .f-findpass-form input:focus, .f-warp .f-updatepass-form input:focus, .f-warp .f-userinfo-form input:focus {
   outline: none;
   outline-offset: 0;
 }
-.f-warp .f-register-form .f-u-wrap, .f-warp .f-findpass-form .f-u-wrap, .f-warp .f-updatepass-form .f-u-wrap {
+.f-warp .f-register-form .f-u-wrap, .f-warp .f-findpass-form .f-u-wrap, .f-warp .f-updatepass-form .f-u-wrap, .f-warp .f-userinfo-form .f-u-wrap {
   margin-top: 0.2rem;
 }
-.f-warp .f-register-form .f-verify-wrap:before, .f-warp .f-register-form .f-verify-wrap:after, .f-warp .f-findpass-form .f-verify-wrap:before, .f-warp .f-findpass-form .f-verify-wrap:after, .f-warp .f-updatepass-form .f-verify-wrap:before, .f-warp .f-updatepass-form .f-verify-wrap:after {
+.f-warp .f-register-form .f-verify-wrap:before, .f-warp .f-register-form .f-verify-wrap:after, .f-warp .f-findpass-form .f-verify-wrap:before, .f-warp .f-findpass-form .f-verify-wrap:after, .f-warp .f-updatepass-form .f-verify-wrap:before, .f-warp .f-updatepass-form .f-verify-wrap:after, .f-warp .f-userinfo-form .f-verify-wrap:before, .f-warp .f-userinfo-form .f-verify-wrap:after {
   content: " ";
   display: table;
 }
-.f-warp .f-register-form .f-verify-wrap:after, .f-warp .f-findpass-form .f-verify-wrap:after, .f-warp .f-updatepass-form .f-verify-wrap:after {
+.f-warp .f-register-form .f-verify-wrap:after, .f-warp .f-findpass-form .f-verify-wrap:after, .f-warp .f-updatepass-form .f-verify-wrap:after, .f-warp .f-userinfo-form .f-verify-wrap:after {
   clear: both;
 }
-.f-warp .f-register-form .f-verify-wrap input[type="tel"], .f-warp .f-findpass-form .f-verify-wrap input[type="tel"], .f-warp .f-updatepass-form .f-verify-wrap input[type="tel"] {
+.f-warp .f-register-form .f-verify-wrap input[type="tel"], .f-warp .f-findpass-form .f-verify-wrap input[type="tel"], .f-warp .f-updatepass-form .f-verify-wrap input[type="tel"], .f-warp .f-userinfo-form .f-verify-wrap input[type="tel"] {
   width: 8.35rem;
   background: white no-repeat 12px 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.f-warp .f-register-form .f-verify-wrap a, .f-warp .f-findpass-form .f-verify-wrap a, .f-warp .f-updatepass-form .f-verify-wrap a {
+.f-warp .f-register-form .f-verify-wrap a, .f-warp .f-findpass-form .f-verify-wrap a, .f-warp .f-updatepass-form .f-verify-wrap a, .f-warp .f-userinfo-form .f-verify-wrap a {
   display: inline-block;
   height: 2.15rem;
   line-height: 2.15rem;
@@ -2904,7 +2934,7 @@ body, html {
   text-decoration: none;
   font-size: 1rem;
 }
-.f-warp .f-register-form .protocol, .f-warp .f-findpass-form .protocol, .f-warp .f-updatepass-form .protocol {
+.f-warp .f-register-form .protocol, .f-warp .f-findpass-form .protocol, .f-warp .f-updatepass-form .protocol, .f-warp .f-userinfo-form .protocol {
   background-color: #fff;
   margin-top: 0.75rem;
   color: #000;
@@ -2913,20 +2943,55 @@ body, html {
   overflow-y: auto;
   height: 7rem;
 }
-.f-warp .f-register-form .protocol h2, .f-warp .f-findpass-form .protocol h2, .f-warp .f-updatepass-form .protocol h2 {
+.f-warp .f-register-form .protocol h2, .f-warp .f-findpass-form .protocol h2, .f-warp .f-updatepass-form .protocol h2, .f-warp .f-userinfo-form .protocol h2 {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
 }
-.f-warp .f-register-form .protocol p, .f-warp .f-findpass-form .protocol p, .f-warp .f-updatepass-form .protocol p {
+.f-warp .f-register-form .protocol p, .f-warp .f-findpass-form .protocol p, .f-warp .f-updatepass-form .protocol p, .f-warp .f-userinfo-form .protocol p {
   text-indent: 1rem;
   line-height: 1rem;
 }
-.f-warp .f-register-form .f-regist-btn, .f-warp .f-findpass-form .f-regist-btn, .f-warp .f-updatepass-form .f-regist-btn {
+.f-warp .f-register-form .f-regist-btn, .f-warp .f-findpass-form .f-regist-btn, .f-warp .f-updatepass-form .f-regist-btn, .f-warp .f-userinfo-form .f-regist-btn {
   margin-top: 0.75rem;
 }
-.f-warp .f-register-form .f-findpass-btn, .f-warp .f-register-form .f-updatepass-btn, .f-warp .f-findpass-form .f-findpass-btn, .f-warp .f-findpass-form .f-updatepass-btn, .f-warp .f-updatepass-form .f-findpass-btn, .f-warp .f-updatepass-form .f-updatepass-btn {
+.f-warp .f-register-form .f-findpass-btn, .f-warp .f-register-form .f-updatepass-btn, .f-warp .f-findpass-form .f-findpass-btn, .f-warp .f-findpass-form .f-updatepass-btn, .f-warp .f-updatepass-form .f-findpass-btn, .f-warp .f-updatepass-form .f-updatepass-btn, .f-warp .f-userinfo-form .f-findpass-btn, .f-warp .f-userinfo-form .f-updatepass-btn {
   margin-top: 3rem;
+}
+.f-warp .f-userinfo-form .f-user-moeny {
+  margin: 2rem 0;
+  color: #000;
+  position: relative;
+  height: 1.5rem;
+  font-weight: 600;
+}
+.f-warp .f-userinfo-form .f-user-moeny:before, .f-warp .f-userinfo-form .f-user-moeny:after {
+  content: " ";
+  display: table;
+}
+.f-warp .f-userinfo-form .f-user-moeny:after {
+  clear: both;
+}
+.f-warp .f-userinfo-form .f-user-moeny .f-lable-l {
+  position: absolute;
+  bottom: 0;
+}
+.f-warp .f-userinfo-form .f-user-moeny .f-lable-r {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.f-warp .f-userinfo-form .f-user-moeny p {
+  text-align: center;
+  color: #ea3b32;
+  font-size: 30px;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.f-warp .f-ad-1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 .f-warp .f-agree {
   margin-top: 0.75rem;
@@ -2958,4 +3023,56 @@ body, html {
   color: #fddc2f;
   font-size: 0.9rem;
   text-decoration: underline;
+}
+
+.f-pop {
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 11rem;
+}
+.f-pop .f-pop-wrap {
+  width: 16rem;
+  padding: 0.95rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.f-pop .f-pop-wrap h2 {
+  color: #000;
+  font-size: 16px;
+}
+.f-pop .f-pop-wrap .f-pass-wrap {
+  margin-top: 1.25rem;
+}
+.f-pop .f-pop-wrap .f-pass-wrap input {
+  width: 100%;
+  color: #000;
+  padding: 0.6rem 0 0.6rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #b8b8b8;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.f-pop .f-pop-wrap .f-pass-wrap input:focus {
+  outline: none;
+  outline-offset: 0;
+}
+.f-pop .f-pop-wrap .f-changepass-btn {
+  display: block;
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  background-color: #dc332a;
+}
+.f-pop .f-pop-wrap .f-changepass-btn:hover, .f-pop .f-pop-wrap .f-changepass-btn:focus, .f-pop .f-pop-wrap .f-changepass-btn:active {
+  text-decoration: none;
+  outline: none;
+  border: none;
 }

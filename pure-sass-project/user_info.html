@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<title>拼生活忘记密码页面</title>
+		<title>我的信息</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -27,22 +27,40 @@
 			<header class="header">
 				<i class="back">后退</i>
 				<h2 class="f-title">我的信息</h2>
-				<i class="user-info">操作</i>
+				<i class="f-more-opt">更多操作</i>
+				<ul class="f-more-list">
+					<li>充值</li>
+					<li>提现</li>
+					<li class="last">修改密码</li>
+				</ul>
 			</header>
 			<div class="f-warp">
 				<form class="f-userinfo-form">
-					<div class="f-pass-wrap">
-						<input type="password" name="" placeholder="请输入原密码">
+					<div class="f-user-moeny">
+						<span class="f-lable-l">余额：</span>
+						<span class="f-lable-r">元</span>
+						<p>1236.7</p>
 					</div>
-					<div class="f-pass-wrap">
-						<input type="password" name="" placeholder="设置新密码">
+					<div class="f-tel-wrap">
+						<input type="text" name="" placeholder="请输入用户名" value="王媒婆">
 					</div>
-					<div class="f-pass-wrap">
-						<input type="password" name="" placeholder="重复新密码">
+					<div class="f-tel-wrap">
+						<input type="tel" name="" placeholder="请输入手机号" maxlength="11" value="15818888888">
 					</div>
 					<a href="javascript:;" class="f-btn f-updatepass-btn">完成</a>
 				</form>
+				<img src="images/ad/ad-1.png" class="f-ad-1">
 			</div>
+		</div>
+		<!--pop-->
+		<div class="f-pop">
+			<div class="f-pop-wrap">
+				<h2>请输入密码</h2>
+				<div class="f-pass-wrap">
+					<input type="password" name="" placeholder="设置新密码">
+				</div>
+				<a href="javascript:;" class="f-changepass-btn">完成</a>
+				</div>
 		</div>
 	</body>
 	<!-- JavaScript --> 
