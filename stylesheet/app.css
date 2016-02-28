@@ -3611,3 +3611,95 @@ a:hover, a:focus, a:active {
   background: url(../images/common/fail.png) no-repeat right;
   background-size: 3.25rem;
 }
+
+.f-no-overflow {
+  overflow-y: hidden !important;
+}
+
+.f-my-redbag .my-redbag-list {
+  list-style: none;
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 10px 10px 0 10px;
+  padding: 0 0.75rem 0 0.75rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+.f-my-redbag .my-redbag-list li {
+  padding: 0.75rem 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #c8c8c8;
+}
+.f-my-redbag .my-redbag-list .redbag-info:before, .f-my-redbag .my-redbag-list .redbag-info:after {
+  content: " ";
+  display: table;
+}
+.f-my-redbag .my-redbag-list .redbag-info:after {
+  clear: both;
+}
+.f-my-redbag .my-redbag-list .redbag-info .redbag-name {
+  color: #404040;
+  font-size: 18px;
+}
+.f-my-redbag .my-redbag-list .redbag-info .redbag-money {
+  color: #df5d5a;
+  font-size: 18px;
+}
+.f-my-redbag .my-redbag-list .redbag-info-2 {
+  margin-top: 0.2rem;
+}
+.f-my-redbag .my-redbag-list .redbag-info-2:before, .f-my-redbag .my-redbag-list .redbag-info-2:after {
+  content: " ";
+  display: table;
+}
+.f-my-redbag .my-redbag-list .redbag-info-2:after {
+  clear: both;
+}
+.f-my-redbag .my-redbag-list .redbag-info-2 .redbag-time {
+  color: #b8b8b8;
+}
+.f-my-redbag .my-redbag-list .redbag-info-2 .redbag-money {
+  color: #b8b8b8;
+}
+.f-my-redbag .f-redbag {
+  height: 20rem;
+  background: url(../images/common/my_redbag.png);
+  background-size: cover;
+  position: relative;
+}
+.f-my-redbag .f-redbag .f-info {
+  position: relative;
+  text-align: center;
+  padding-top: 5.9rem;
+  color: #f89526;
+}
+.f-my-redbag .f-redbag .f-money {
+  text-align: center;
+  color: #da3531;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.f-my-redbag .f-redbag .f-all-moeny {
+  position: absolute;
+  height: 7.5rem;
+  width: 100%;
+  bottom: 0;
+  color: #fedd32;
+}
+.f-my-redbag .f-redbag .f-all-moeny .f-money-in, .f-my-redbag .f-redbag .f-all-moeny .f-money-out {
+  display: inline-block;
+  height: 7.5rem;
+  width: 49%;
+}
+.f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-in-info, .f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-out-info, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-in-info, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-out-info {
+  margin-top: 3rem;
+  font-size: 16px;
+  text-align: center;
+}
+.f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-in-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-out-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-in-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-out-money {
+  text-align: center;
+  font-size: 35px;
+}
