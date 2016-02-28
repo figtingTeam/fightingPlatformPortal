@@ -2722,6 +2722,7 @@ body, html {
   background-color: #db332a;
   color: #fff;
   height: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .fl {
@@ -3142,6 +3143,82 @@ a:hover, a:focus, a:active {
 .f-warp .f-start-task-form .f-findpass-btn {
   margin-top: 1rem;
 }
+.f-warp .f-form-get-cash {
+  margin: 0 0.75rem;
+}
+.f-warp .f-form-get-cash .f-form-wrap {
+  height: 2.5rem;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+  margin-top: 0.75rem;
+  border-radius: 4px;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-join {
+  position: absolute;
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  left: 0.75rem;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-money {
+  position: absolute;
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  right: 0.9rem;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-money-input {
+  display: block;
+  height: 2.5rem;
+  width: 12rem;
+  margin: 0 auto;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-money-input input {
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-money-input input:focus {
+  outline: none;
+  outline-offset: 0;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-label {
+  display: inline-block;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  width: 5rem;
+  padding-left: 15px;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-label select {
+  border: none;
+  padding: 0 5px 0 0;
+  height: 2.5rem;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-label select:focus {
+  outline: none;
+  outline-offset: 0;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-input {
+  display: inline-block;
+  width: 11rem;
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-input input {
+  width: 100%;
+  border: none;
+  padding: 0;
+  text-align: right;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.f-warp .f-form-get-cash .f-form-wrap .f-input input:focus {
+  outline: none;
+  outline-offset: 0;
+}
 
 .f-regist {
   display: block;
@@ -3254,6 +3331,8 @@ a:hover, a:focus, a:active {
   padding: 0;
   margin: 0 0.35rem;
   list-style: none;
+  max-height: 27rem;
+  overflow-y: auto;
 }
 .f-redbag-home .f-redbag-list li .f-item-box, .f-join-task .f-redbag-list li .f-item-box {
   position: relative;
@@ -3471,4 +3550,64 @@ a:hover, a:focus, a:active {
 }
 .f-join-task .f-join-task-btn {
   padding: 0.35rem;
+}
+
+.f-get-cash .f-get-cash-btn {
+  margin: 3rem 0.75rem 0 0.75rem;
+}
+.f-get-cash .f-get-cash-list {
+  max-height: 11rem;
+  overflow-y: auto;
+  list-style: none;
+  margin: 1.6rem 0.75rem 0 0.75rem;
+  padding: 0 0.75rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+.f-get-cash .f-get-cash-list li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #c8c8c8;
+  padding-top: 0.8rem;
+  padding-bottom: 0.6rem;
+}
+.f-get-cash .f-get-cash-list li .cash-money {
+  margin-bottom: 0.4rem;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-info {
+  display: inline-block;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-info:before, .f-get-cash .f-get-cash-list li .cash-money .cash-info:after {
+  content: " ";
+  display: table;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-info:after {
+  clear: both;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-info .f-info {
+  margin-right: 0.9rem;
+  color: #9a9a9a;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-info .f-cash-money {
+  color: #d6271e;
+}
+.f-get-cash .f-get-cash-list li .cash-money .cash-time {
+  display: inline-block;
+  color: #a2a2a2;
+}
+.f-get-cash .f-get-cash-list li .cash-account .f-info {
+  margin-right: 0.9rem;
+  color: #9a9a9a;
+}
+.f-get-cash .f-get-cash-list li .cash-account .f-cash-account {
+  color: #9a9a9a;
+}
+.f-get-cash .f-get-cash-list .cash-success {
+  background: url(../images/common/success.png) no-repeat right;
+  background-size: 3.25rem;
+}
+.f-get-cash .f-get-cash-list .cash-fail {
+  background: url(../images/common/fail.png) no-repeat right;
+  background-size: 3.25rem;
 }
