@@ -3094,6 +3094,10 @@ a:hover, a:focus, a:active {
   background-color: #fff;
   border-radius: 5px;
 }
+.f-warp .f-agree .active {
+  background: url(../images/common/gou.png) white no-repeat;
+  background-size: cover;
+}
 .f-warp .f-begin-task-btn {
   margin-top: 19rem;
 }
