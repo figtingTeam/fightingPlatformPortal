@@ -3537,6 +3537,11 @@ a:hover, a:focus, a:active {
   background: url(../images/common/choosed.png);
   background-size: cover;
 }
+.f-join-task .f-pay .pay-type .pay-type-wrap .pay-type-1 .f-leave-moeny {
+  color: #de524d;
+  font-size: 12px;
+  margin-left: 0.5rem;
+}
 .f-join-task .f-pay .pay-type .pay-type-wrap .pay-type-2 {
   margin-top: 10px;
 }
