@@ -3067,11 +3067,6 @@ a:hover, a:focus, a:active {
   height: 1.5rem;
   line-height: 1.5rem;
 }
-.f-warp .f-ad-1 {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
 .f-warp .f-agree {
   margin-top: 0.75rem;
   -webkit-user-select: none;
@@ -3711,4 +3706,13 @@ a:hover, a:focus, a:active {
 .f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-in-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-in .f-out-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-in-money, .f-my-redbag .f-redbag .f-all-moeny .f-money-out .f-out-money {
   text-align: center;
   font-size: 35px;
+}
+
+.f-user-info {
+  min-height: 100%;
+}
+.f-user-info .f-ad-1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
