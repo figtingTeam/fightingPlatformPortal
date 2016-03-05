@@ -1,6 +1,9 @@
 /**
  * 用法：toast.pop('Hello!'); 默认显示3秒后隐藏
  * toast.pop('Hello!', 5000); 自定义显示5s隐藏
+ * toast.pop('Hello!', 5000, function(){  //回调函数
+ *	//do something...
+ * });
  */
 var toast = (function() {
 	var TOAST_ANIMATION_SPEED = 400; 
@@ -36,12 +39,13 @@ var toast = (function() {
 		},
 		DURATION: 3000,
 		timeout: [],
-		popNum: 0
+		popNum: 0,
+		callback: undefined
 	}
-	function popToast(text, time) {
-		createToast(text, time);
+	function popToast(text, time, callback) {
+		createToast(text, time, callback);
 	}
-	function createToast(text, time) {
+	function createToast(text, time, callback) {
 		//创建
 		var toastStage = document.createElement('div');
 		if(typeof text === 'string') {
@@ -57,6 +61,7 @@ var toast = (function() {
 		if(typeof time !== "undefined") {
 			duration = time;
 		}
+		defaults.callback = callback;
 		defaults.timeout.push(setTimeout(_hide(toastStage), duration));
 	}
 	function stylize(element, styles) {
@@ -82,6 +87,10 @@ var toast = (function() {
 			}
 			defaults.timeout = []; 
 		}
+		if (typeof defaults.callback === "function") {
+            defaults.callback();
+        }
+        defaults.callback = undefined;
 	}
 
 	return {
