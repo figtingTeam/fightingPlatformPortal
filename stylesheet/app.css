@@ -3248,6 +3248,7 @@ a:hover, a:focus, a:active {
   padding-top: 11rem;
 }
 .f-pop .f-pop-wrap {
+  position: relative;
   width: 16rem;
   padding: 0.95rem;
   margin: 0 auto;
@@ -3256,6 +3257,43 @@ a:hover, a:focus, a:active {
 .f-pop .f-pop-wrap h2 {
   color: #000;
   font-size: 16px;
+}
+.f-pop .f-pop-wrap .close {
+  position: absolute;
+  color: #000;
+  font-size: 20px;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+.f-pop .f-pop-wrap .close::before, .f-pop .f-pop-wrap .close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #000;
+}
+.f-pop .f-pop-wrap .close::before {
+  height: 1px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.f-pop .f-pop-wrap .close::after {
+  height: 1px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .f-pop .f-pop-wrap .f-pass-wrap {
   margin-top: 1.25rem;
@@ -3736,18 +3774,12 @@ a:hover, a:focus, a:active {
   height: 60px;
   z-index: 9999;
   background-color: #F95600;
-}
-.f-out-share .jiathis_txt {
-  display: none;
-}
-.f-out-share .jiathis_style_m {
-  height: 100%;
   text-align: center;
-  line-height: 85px !important;
+  line-height: 80px;
 }
-.f-out-share .jiathis_style_m .jiathis_style_32x32 {
+.f-out-share .jiathis_style, .f-out-share .jiathis_style_32x32 {
   display: inline-block;
 }
-.f-out-share .jiathis_style_m .jiathis_style_32x32 span, .f-out-share .jiathis_style_m .jiathis_style_32x32 .jtico_jiathis {
-  margin-left: 10px;
+.f-out-share .jiathis_style span, .f-out-share .jiathis_style_32x32 span {
+  margin-right: 10px;
 }
