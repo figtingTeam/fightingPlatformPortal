@@ -2745,6 +2745,7 @@ a:hover, a:focus, a:active {
   position: relative;
   background-color: #c32019;
   height: 2.5rem;
+  text-align: center;
 }
 .header i.back {
   position: absolute;
@@ -2782,7 +2783,7 @@ a:hover, a:focus, a:active {
   background: url("../images/common/common.png") no-repeat -41px -9px;
 }
 .header h2 {
-  text-align: center;
+  display: inline-block;
   font-size: 1rem;
   color: #fff;
   line-height: 2.5rem;
