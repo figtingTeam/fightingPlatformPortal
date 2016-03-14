@@ -2903,6 +2903,10 @@ a:hover, a:focus, a:active {
   .f-redbag-home .f-redbag-list {
     max-height: 22rem !important;
   }
+
+  .f-pop {
+    padding-top: 8rem !important;
+  }
 }
 @media (max-width: 320px) {
   .f-redbag-home .f-redbag-list li .f-item-box .f-item-info {
@@ -3240,7 +3244,7 @@ a:hover, a:focus, a:active {
 }
 
 .f-pop {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 999999;
   width: 100%;
@@ -3310,6 +3314,16 @@ a:hover, a:focus, a:active {
 .f-pop .f-pop-wrap .f-pass-wrap input:focus {
   outline: none;
   outline-offset: 0;
+}
+.f-pop .f-pop-wrap .f-pass-wrap .f-input-num {
+  width: 120px;
+  padding: 0.6rem 0 0.6rem 0.6rem;
+}
+.f-pop .f-pop-wrap .f-pass-wrap .f-check-num {
+  display: inline-block;
+  height: 44px;
+  width: 110px;
+  margin-left: 5px;
 }
 .f-pop .f-pop-wrap .f-changepass-btn {
   display: block;
