@@ -3440,7 +3440,6 @@ a:hover, a:focus, a:active {
 }
 .f-redbag-home .f-redbag-list li .f-item-box .f-item-info, .f-join-task .f-redbag-list li .f-item-box .f-item-info {
   display: inline-block;
-  margin-left: 15px;
   width: 13.25rem;
   height: 4.1rem;
 }
